@@ -158,6 +158,7 @@ span {
 
 .col-3 img {
     width: 100%;
+    height: 300px;
 }
 .product-title {
     color: #555;
