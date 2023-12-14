@@ -46,6 +46,11 @@ nav ul li {
   cursor: pointer;
   margin-left: 10px;
 }
+.menu-img {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
 a {
   text-decoration: none;
   color: #555;
@@ -252,4 +257,124 @@ small {
 .col-5 img:hover {
     filter: grayscale(0);
     padding: 5px;
+}
+
+/* Footer section */
+.footer {
+  background: #000;
+  color: #8a8a8a;
+  padding: 30px 0 20px;
+  font-size: 14px;
+}
+.footer p {
+  color: #8a8a8a;
+}
+.footer h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+  min-width: 250px;
+  margin-bottom: 20px;
+}
+.footer-col-1 {
+  flex-basis: 30%;
+}
+.app-logo {
+  margin-top: 20px;
+}
+.app-logo img {
+  width: 140px;
+  cursor: pointer;
+}
+.footer-col-2 {
+  flex: 1;
+  text-align: center;
+}
+.footer-col-2 img {
+  width: 180px;
+  margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4 {
+  flex-basis: 12%;
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+.footer hr {
+  border: none;
+  background: #b5b5b5;
+  height: 1px;
+  margin: 20px 0;
+}
+.copyright {
+  text-align: center;
+  margin-top: 6px;
+}
+
+/* Media query for menu  */
+@media only screen  and (max-width:800px){
+    nav ul {
+      position: absolute;
+      background: #333;
+      top:70px;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      transition: max-height 0.5s;
+    }
+    nav ul li {
+      display:block;
+      margin-right: 50px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+    nav ul li a {
+      color: #fff;
+    }
+    .menu-img {
+      display: block;
+      cursor: pointer;
+    }
+}
+
+
+@media only screen  and (max-width:600px) {
+  .row {
+    text-align: center;
+  }
+  .col-1, .col-2, .col-3 {
+    flex-basis: 100%;
+  }
+  .col-1 img {
+    width: 400px;
+  }
+  .product-row {
+     display: block;
+     width: 400px;
+     align-items: center;
+     justify-content: center;
+  }
+  .offer-row {
+    display: block;
+  }
+  .col-4 {
+    align-items: center;
+    justify-items: center;
+  }
+  .testimonial-row {
+    display: block;
+    align-items: center;
+  }
+  .brands-row {
+    display: block;
+    align-items: center;
+    justify-items: baseline;
+    margin: auto;
+  }
+  .col-5 {
+    text-align: center;
+    justify-content: center;
+  }
 }
